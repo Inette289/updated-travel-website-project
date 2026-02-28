@@ -128,7 +128,7 @@ Travel Website/
 👉 Add your GitHub Pages link here:
 
 ```
-https://yourusername.github.io/travelexplorer
+https://Inette289.github.io/Updated-travel-website-project
 ```
 
 ---
@@ -138,7 +138,7 @@ https://yourusername.github.io/travelexplorer
 1. Clone the repository:
 
 ```
-git clone https://github.com/yourusername/travelexplorer.git
+git clone https://github.com/Inette289/updated-travel-website-project.git
 ```
 
 2. Open the folder:
