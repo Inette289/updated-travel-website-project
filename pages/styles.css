@@ -1,0 +1,466 @@
+/* =========================
+   GENERAL RESET & BASE STYLES
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f7f9fc;
+    color: #222;
+    line-height: 1.6;
+}
+/* =========================
+   HEADER / NAVBAR
+========================= */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background: #0a66c2;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav ul.menu li a.active,
+.nav ul.menu li a:hover {
+    color: #ff7a00;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+/* =========================
+   AUTH BUTTONS
+========================= */
+.auth-buttons button {
+    margin-left: 12px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.auth-buttons button#showLogin {
+    background: #ff7a00;
+    color: white;
+}
+
+.auth-buttons button#showSignup {
+    background: #00b4d8;
+    color: white;
+}
+
+.auth-buttons button:hover {
+    opacity: 0.9;
+}
+
+/* =========================
+   MODAL / AUTH FORMS
+========================= */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 0.3s ease-in;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #222;
+}
+
+.auth-form h2 {
+    text-align: center;
+    color: #0a66c2;
+    margin-bottom: 24px;
+}
+
+.auth-form .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.auth-form label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    background: white;
+    padding: 0 4px;
+    color: #999;
+    font-size: 12px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+.auth-form input:focus + label,
+.auth-form input:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 8px;
+    font-size: 10px;
+    color: #0a66c2;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 12px;
+    background: #0a66c2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.auth-form button:hover {
+    background: #005bb5;
+}
+
+/* =========================
+          BUTTONS
+=========================== */
+/* BUTTONS */
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg,#ff7a00,#ff4d00);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.btn-secondary {
+    background: linear-gradient(45deg,#0a66c2,#00b4d8);
+    color: white;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+/* =========================
+            INTRO 
+=========================*/
+ .travel-intro h1{
+    background:
+        linear-gradient(rgba(10,102,194,.75), rgba(0,180,216,.65)),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 4%;
+    font-size: 48px;
+    margin-bottom: 16px; 
+}
+.travel-intro p {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h2{
+    text-align: center;
+    color: #005bb5;
+    text-decoration: underline;
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+/* =========================
+   TRAVEL CITIE / CONTENT
+=========================*/
+.guide, 
+.reverse-guide{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+    max-width: 1100px;
+
+}
+
+.reverse-guide {
+    flex-direction: row-reverse;
+}
+
+.travel-content {
+    flex: 1;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.guide .travel-content{
+    border-left: 4px solid #0a66c2;
+    padding: 25px;
+}
+
+.reverse-guide .travel-content{
+    border-right: 4px solid #0a66c2;
+    padding-right: 10px;
+}
+
+.travel-content h3{
+    font-size: 22px;
+    color: #0a66c2;
+    margin: 18px 0 8px;
+    position: relative;  
+}
+
+.travel-content h3::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #0a66c2;
+    margin-top: 5px;
+}
+
+.travel-content li{
+    background: #f4f7fb;
+    font-size: 14px;
+}
+
+.travel-content li strong{
+     color: #0a66c2;
+}
+
+/* ==========================
+        Images
+============================*/
+.travel-img {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* image sits left inside its side */
+}
+
+/* Image styling */
+.travel-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/* =========================
+   STAR RATING
+========================= */
+.star{
+    font-size: larger;
+    font-weight: bolder;
+}
+.star-rating {
+    text-align: center;
+    padding: 30px 6%;
+    background: white;
+    font-size: 20px;
+    color: #02213f;
+    text-shadow: 2px 3px #77b9fc;
+    font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+ background:
+    linear-gradient(rgba(10,102,194,.75), rgba(0,180,216,.65)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 30px 8%;
+  text-align: center;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.contact-item {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  color: #0000EE;
+  padding: 12px;
+  border-radius: 10px;
+  justify-content: center;
+  border: 0.54px solid #00b4d8;
+  background-color: #fdfdfd;
+}
+
+#facebook { color: #0683ff; }
+#instagram { color: #E1306C; }
+#tiktok { color: #FE2C55; }
+#mail { color: #0a66c2; }
+#phone { color: #25D366; }
+
+
+.contact-item:hover{
+  background: #0d1547;
+  border: 0.5px solid #ffffff;
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #ababac;
+  -moz-text-decoration-color: #b7b7b8;
+}
+
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 16px 0;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.footer-links a {
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.footer-links a:hover {
+  color: #0000EE;
+  font-size: larger;
+  text-decoration: underline;
+  text-decoration-color: #0000EE;
+  -moz-text-decoration-color: #0000EE;
+}
+
+p.demo{
+  font-size: smaller;
+  color: black;
+  margin: 10px 5px;
+}
+p.copyright{
+  font-size: small;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .auth-buttons { gap: 6px; }
+  .auth-buttons button { padding: 6px 14px; font-size: 12px; }
+  #authModal .modal-content { width: 95%; margin: 60px auto; padding: 20px 15px; }
+  .auth-form h2 { font-size: 16px; }
+  .auth-form input, .auth-form select, .auth-form textarea { font-size: 12px; padding: 8px 6px; }
+  .auth-form label { font-size: 11px; }
+  .auth-form button { font-size: 13px; padding: 10px; }
+  .menu-toggle { display: block; }
+  .nav { display: none; width: 100%; }
+  .nav.open { display: block; }
+  .menu { flex-direction: column; padding-top: 14px; }
+  .auth { display: none; }
+}
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .image {
+        justify-content: center;
+    }
+} 

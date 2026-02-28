@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dubai Page</title>
+       <meta name="description" content="Experience Dubai with TravelExplorer. Discover luxury shopping, skyscrapers, desert adventures, and world-class attractions. Plan your trip today.">
+<meta name="keywords" content="Dubai travel guide, UAE travel, Dubai attractions, Burj Khalifa, desert safari Dubai, luxury travel Dubai, TravelExplorer">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+        <meta property="og:title" content="Dubai Travel Guide | TravelExplorer">
+<meta property="og:description" content="Experience Dubai’s luxury, skyscrapers, desert adventures, and shopping. Plan your trip with TravelExplorer.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourwebsite.com/dubai.html">
+<meta property="og:image" content="https://yourwebsite.com/travel-img/dubai.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dubai Travel Guide | TravelExplorer">
+<meta name="twitter:description" content="Explore Dubai’s luxury lifestyle, attractions, and travel tips.">
+<meta name="twitter:image" content="https://yourwebsite.com/travel-img/dubai.jpg">
+        <link rel="stylesheet" href="styles.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="travel-img/favicon.png">
+    </head>
+    <body>
+               <!-- ===== HEADER / NAVBAR ===== -->
+<header class="header">
+    <div class="logo">TravelExplorer</div>
+  
+<button class="menu-toggle" aria-label="Toggle Menu">
+  <i class="fa-solid fa-bars"></i>
+</button>
+
+     <nav class="nav">
+        <ul class="menu">
+  <li><a href="/index.html" class="btn-secondary">Go back</a></li>
+  <li><a href="/index.html#contactForm" class="btn-primary">Book Now</a></li>
+</ul>
+    </nav>
+
+<div class="auth-buttons">
+  <button id="showLogin">Login</button>
+  <button id="showSignup">Sign Up</button>
+</div>
+
+<!-- Modal Overlay -->
+<div id="authModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <!-- Login Form -->
+    <form id="loginForm" class="auth-form">
+      <h2>Login</h2>
+
+      <div class="form-group">
+        <input type="email" id="loginEmail" placeholder=" " required>
+        <label for="loginEmail">Email</label>
+      </div>
+
+      <div class="form-group">
+        <input type="password" id="loginPassword" placeholder=" " required>
+        <label for="loginPassword">Password</label>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- Signup Form -->
+    <form id="signupForm" class="auth-form">
+      <h2>Sign Up</h2>
+
+      <div class="form-group">
+        <input type="text" id="signupName" placeholder=" " required>
+        <label for="signupName">Full Name</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="signupEmail" placeholder=" " required>
+        <label for="signupEmail">Email</label>
+      </div>
+
+      <div class="form-group">
+        <input type="password" id="signupPassword" placeholder=" " required>
+        <label for="signupPassword">Password</label>
+      </div>
+
+      <div class="form-group">
+        <input type="password" id="signupConfirmPassword" placeholder=" " required>
+        <label for="signupConfirmPassword">Confirm Password</label>
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</div>
+</header>
+<section class="travel-intro">
+  <h1>Dubai | UAE</h1>
+  <p>
+    Dubai is a futuristic city with luxury shopping, ultramodern architecture, desert adventures, and world-class entertainment.
+    Iconic landmarks include Burj Khalifa, Palm Jumeirah, and Dubai Mall.
+  </p>
+  <p>
+    Visitors can explore modern architecture, cultural heritage, theme parks, and desert safaris. Dubai offers experiences for luxury travelers, families, and adventure seekers alike.
+  </p>
+  <h2>Travel Guide:</h2>
+
+</section>
+
+<section class="guide">
+  <div class="travel-content">
+    <h3>Key Areas</h3>
+  <ul>
+    <li><strong>Downtown Dubai:</strong> Burj Khalifa, Dubai Mall, fountains</li>
+    <li><strong>Marina & JBR:</strong> Beachfront, dining, nightlife</li>
+    <li><strong>Old Dubai:</strong> Souks, museums, cultural heritage</li>
+  </ul>
+
+  </div>
+  <div class="travel-img">
+    <img src="/travel-img/dubai1.jpg" alt="Palm-shaped island aerial view in Dubai">
+  </div>
+</section>
+
+<section class="reverse-guide">
+  <div class="travel-content">
+    <h3>Key Travel Information</h3>
+  <ul>
+    <li><strong>Best Time to Visit:</strong> November – March for cooler weather</li>
+    <li><strong>Entry Requirements:</strong> UAE Visa required for most travelers; some nationalities get visa on arrival</li>
+    <li><strong>Currency:</strong> UAE Dirham (AED)</li>
+    <li><strong>Safety:</strong> Very safe; follow local laws</li>
+    <li><strong>Culture:</strong> Respect local dress codes and customs</li>
+  </ul>
+
+  </div>
+  <div class="travel-img">
+    <img src="/travel-img/dubai4.jpg" alt="Luxury resort architecture in Dubai">
+  </div>
+</section>
+
+<section class="guide">
+  <div class="travel-content">
+    <h3>Top Destinations & Activities</h3>
+  <ul>
+    <li><strong>Burj Khalifa & Downtown:</strong> Observation decks, Dubai Mall, dining</li>
+    <li><strong>Palm Jumeirah:</strong> Luxury resorts, beach activities</li>
+    <li><strong>Desert Safari:</strong> Dune bashing, camel rides, cultural shows</li>
+    <li><strong>Dubai Marina & JBR:</strong> Walking, cafes, yacht tours</li>
+    <li><strong>Old Dubai:</strong> Gold and spice souks, Al Fahidi Historical District</li>
+  </ul>
+
+  </div>
+  <div class="travel-img">
+    <img src="/travel-img/dubai3.jpg" alt="Modern architecture and skyline in Dubai">
+  </div>
+</section>
+
+<section class="reverse-guide">
+  <div class="travel-content">
+    <h3><strong>Budgeting (Per Person / Week):</strong></h3>
+  <ul>
+    <li><strong>Budget:</strong> $800 – $1500 USD</li>
+    <li><strong>Mid-Range:</strong> $1500 – $4000 USD</li>
+    <li><strong>Luxury:</strong> $5000+ USD</li>
+  </ul>
+
+  <h3>Getting Around</h3>
+  <p>
+    Metro, taxis, buses, and car rentals are convenient. Walking in Downtown and Marina areas is popular.
+  </p>
+ <h3>Tips</h3>
+  <ul>
+    <li>Carry sunscreen, light clothing, and comfortable shoes</li>
+    <li>Respect local laws, especially regarding dress and behavior</li>
+  </ul>
+  </div>
+  <div class="travel-img">
+    <img src="/travel-img/dubai5.jpg" alt="Dubai marina skyline at sunset">
+  </div>
+</section>
+
+<!-- STAR RATING STARTS AFTER THIS SECTION -->
+<div class="star-rating" id="rating">
+  <span class="star">★ ★ ★ ★ ★ VOTED #1 IN TRAVEL.</span>
+  <p>TravelExplorer is a responsive travel website designed to help users discover destinations and explore travel options through a clean, intuitive, and engaging interface.</p>
+</div>
+
+        <!--- footer -->
+<footer class="footer">
+<section class="contact-section">
+  <h2>Contact Us</h2>
+  <p>We’re here to help you travel with confidence. Reach out through any of the channels below.</p>
+
+  <div class="contact-grid">
+
+    <a href="https://facebook.com/yourpage" target="_blank" class="contact-item" rel="noopener noreferrer">
+      <i id="facebook" class="fa-brands fa-facebook-f"></i>
+      <span>Facebook</span>
+    </a>
+    <a href="https://instagram.com/yourpage" target="_blank" class="contact-item" rel="noopener noreferrer">
+      <i id="instagram" class="fa-brands fa-instagram"></i>
+      <span>Instagram</span>
+    </a>
+    <a href="https://tiktok.com/@yourpage" target="_blank" class="contact-item" rel="noopener noreferrer">
+      <i id="tiktok" class="fa-brands fa-tiktok"></i>
+      <span>TikTok</span>
+    </a>
+    <a href="mailto:info@travelexplorer.com" class="contact-item">
+      <i id="mail" class="fa-solid fa-envelope"></i>
+      <span>Email Us</span>
+    </a>
+    <a href="tel:+27123456789" class="contact-item">
+      <i id="phone" class="fa-solid fa-phone"></i>
+      <span>Call Us</span>
+    </a>
+
+  </div>
+</section>
+<h3>Quick Links:</h3>
+<div class="footer-links">
+<a href="/index.html#deals">Home</a>
+<a href="/index#desttinations">Destinations</a>
+<a href="/index.html#packages_index">Packages</a>
+<a href="/index.html#about">About Us</a>
+<a href="/index.html#contactForm">Contact</a>
+</div>
+<hr>
+<p class="demo">This project demonstrates core front-end development principles, including responsive layout design, UI consistency, and interactive functionality.</p>
+<p class="copyright">© 2025 TravelExplorer. All rights reserved.</p>
+</footer>
+<script src="/javascript.js" defer></script>
+</body>
+</html>

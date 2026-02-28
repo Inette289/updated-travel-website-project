@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="robots" content="index, follow">
+<meta name="description" content="Explore top travel destinations, exclusive deals, and curated travel packages with TravelExplorer. Discover Paris, Tokyo, Cape Town and more with affordable, reliable, and fully planned travel experiences.">
+<meta name="keywords" content="travel, travel packages, holiday deals, vacation planning, travel destinations, Paris travel, Tokyo travel, Cape Town travel, affordable trips, luxury travel, budget travel, travel booking, travel website">
+<meta name="author" content="Inette Badenhorst">
+
+<!-- Open Graph / Social Media Preview -->
+<meta property="og:title" content="TravelExplorer | Travel Packages, Deals & Top Destinations">
+<meta property="og:description" content="Discover top travel destinations, exclusive deals, and curated travel packages. Explore Paris, Tokyo, Cape Town and more with TravelExplorer.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.yourwebsite.com/">
+<meta property="og:image" content="https://www.yourwebsite.com/travel-img/social-preview.jpg">
+<meta property="og:image:alt" content="Travel destinations including beaches, cities, and landmarks featured by TravelExplorer">
+<meta property="og:site_name" content="TravelExplorer">
+<meta property="og:locale" content="en_ZA">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TravelExplorer | Explore the World with Confidence">
+<meta name="twitter:description" content="Find the best travel deals, destinations, and packages for your next adventure.">
+<meta name="twitter:image" content="https://www.yourwebsite.com/travel-img/social-preview.jpg">
+
+<title>TravelExplorer | Travel Packages, Deals & Top Destinations Worldwide</title>
+<link rel="stylesheet" href="styles.css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+>
+<link rel="icon" type="image/x-icon" href="travel-img/favicon.png">
+</head>
+
+<body>
+<!-- ===== HEADER / NAVBAR ===== -->
+<header class="header">
+    <div class="logo">
+      <img src="travel-img/favicon.png" alt="Travel explorer logo sign." class="logo-img">
+      TravelExplorer</div>
+<button class="menu-toggle" aria-label="Toggle Menu">
+  <i class="fa-solid fa-bars"></i>
+</button>
+    <nav class="nav">
+        <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#packages_index">Packages</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contactForm">Contact</a></li>
+        </ul>
+    </nav>
+<div class="auth-buttons">
+  <button type="button" id="showLogin">Login</button>
+  <button type="button" id="showSignup">Sign Up</button>
+</div>
+
+    <!-- ===== Modal Overlay ===== -->
+<div id="authModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   
+          <!-- Login Form -->
+    <form id="loginForm" class="auth-form">
+      <h2>Login</h2>
+      <div class="form-group">
+        <input type="email" id="loginEmail" placeholder=" " required>
+        <label for="loginEmail">Email</label>
+      </div>
+      <div class="form-group">
+        <input type="password" id="loginPassword" placeholder=" " required>
+        <label for="loginPassword">Password</label>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+          
+          <!-- Signup Form -->
+    <form id="signupForm" class="auth-form">
+      <h2>Sign Up</h2>
+      <div class="form-group">
+        <input type="text" id="signupName" placeholder=" " required>
+        <label for="signupName">Full Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" id="signupEmail" placeholder=" " required>
+        <label for="signupEmail">Email</label>
+      </div>
+      <div class="form-group">
+        <input type="password" id="signupPassword" placeholder=" " required>
+        <label for="signupPassword">Password</label>
+      </div>
+      <div class="form-group">
+        <input type="password" id="signupConfirmPassword" placeholder=" " required>
+        <label for="signupConfirmPassword">Confirm Password</label>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</div>
+</header>
+
+<!--- ================================================ HERO SECTION ====================================================== -->
+<section class="hero">
+    <h1>Explore the World with Confidence</h1>
+    <p>Discover iconic destinations, carefully crafted travel packages, and unforgettable experiences.</p>
+    <div class="search-box">
+        <input type="text" id="searchDestination" placeholder="Destination">
+<input type="date" id="searchStart">
+<input type="date" id="searchEnd">
+<button id="searchBtn">Search</button>
+    </div>
+</section>
+
+          <!-- Deal -->
+<section id="deals">
+  <h2>Don't Miss Out on Our Special Deals!</h2>
+  <div id="deal">
+  <div class="deal">
+    <h3>Weekend Away</h3>
+    <p class="discount">25% OFF</p>
+    <p>Quick escape trips with 2 nights stay, airport transfers, and sightseeing.</p>
+    <ul>
+      <li>Accommodation</li>
+      <li>Flights</li>
+      <li>Transport</li>
+    </ul>
+    <button class="view-more-btn">View More</button>
+    <div class="deal-dropdown">
+      <h4>Itinerary</h4>
+      <ul>
+        <li>Day 1: Arrival & welcome drink</li>
+        <li>Day 2: City tour & sightseeing</li>
+        <li>Day 3: Free time & departure</li>
+      </ul>
+      <h4>Inclusions</h4>
+      <ul>
+        <li>3-star hotel accommodation</li>
+        <li>Daily breakfast</li>
+        <li>Airport transfers</li>
+        <li>Optional guided tour</li>
+      </ul>
+      <h4>Pricing</h4>
+      <p>From $299 per person. Early bird 10% off!</p>
+    </div>
+  </div>
+  <div class="deal">
+    <h3>Business Trips</h3>
+    <p class="discount">35% OFF</p>
+    <p>Efficient trips for work + leisure with co-working and sightseeing.</p>
+    <ul>
+      <li>Accommodation</li>
+      <li>Flights</li>
+      <li>Transport</li>
+    </ul>
+    <button class="view-more-btn">View More</button>
+    <div class="deal-dropdown">
+      <h4>Itinerary</h4>
+      <ul>
+        <li>Day 1: Arrival & meeting prep</li>
+        <li>Day 2: Work + city tour</li>
+        <li>Day 3: Leisure & departure</li>
+      </ul>
+      <h4>Inclusions</h4>
+      <ul>
+        <li>4-star accommodation</li>
+        <li>Airport transfers</li>
+        <li>Co-working access</li>
+        <li>Optional city tours</li>
+      </ul>
+      <h4>Pricing</h4>
+      <p>From $699 per person. Early bird 5% off!</p>
+    </div>
+  </div>
+  <div class="deal">
+  <h3>Student Budget Deal</h3>
+  <p class="discount">40% OFF</p>
+  <p>Affordable trips for students with budget stays, shared transport, and top attractions.</p>
+  <ul>
+    <li>Budget Accommodation</li>
+    <li>Discount Flights</li>
+    <li>Shared Transport</li>
+    <li>City Pass</li>
+  </ul>
+  <button class="view-more-btn">View More</button>
+  <div class="deal-dropdown">
+    <h4>Itinerary</h4>
+    <ul>
+      <li>Day 1: Arrival & hostel check-in</li>
+      <li>Day 2: Guided city highlights tour</li>
+      <li>Day 3: Free exploration day</li>
+      <li>Day 4: Departure</li>
+    </ul>
+    <h4>Inclusions</h4>
+    <ul>
+      <li>Hostel or 2-star accommodation</li>
+      <li>Daily breakfast</li>
+      <li>Public transport pass</li>
+      <li>Top attraction entry tickets</li>
+    </ul>
+    <h4>Pricing</h4>
+    <p>From $199 per student. Valid student ID required.</p>
+  </div>
+</div>
+</div>
+</section>
+
+<!--- ================================================
+                  Package Section
+====================================================== -->
+<section id="packages_index">
+    <h2><span class="highlight">Effortless Travel Planning</span></h2>
+   <p>
+  At <span class="highlight">Travel Explorer</span>, our <span class="highlight">travel packages</span> are designed to make 
+  <span class="highlight">planning effortless</span> while delivering 
+  <span class="highlight">reliable comfort</span> and <span class="highlight">meaningful experiences</span>. 
+  Each package is carefully <em>curated</em> to suit different 
+  <span class="highlight">travel styles</span>, <span class="highlight">schedules</span>, and <span class="highlight">budgets</span>—without compromising on 
+  <span class="highlight">quality</span> or <span class="highlight">peace of mind</span>.
+</p>
+<div class="packages">
+    <div class="essential">
+        <h3>🌍 Essential Package</h3>
+        <p class="pack_sub">Explore More, Spend Less</p>
+        <p>The Essential Package is perfect for travelers who want to experience the destination fully without extra frills. Ideal for short trips or budget-conscious travelers, it includes comfortable 3-star accommodation, daily breakfast, and all the essentials to make your journey smooth and enjoyable.</p>  
+        <button class="view-more-btn">View More</button>
+        <div class="deal-dropdown">
+        <h4>With this package, you can:</h4>
+        <ul>
+        <li>Discover the must-see attractions</li>
+        <li>Enjoy practical transportation and easy logistics</li>
+        <li>Focus on exploring and experiencing, not luxury</li>
+        <li>Benefit from affordable pricing while still receiving quality service</li>
+        </ul>
+    </div>
+  </div>
+    <div class="deluxe">
+        <h3>🍹 Deluxe Package</h3>
+        <p class="pack_sub">Balanced Comfort and Exploration</p>
+        <p>The Deluxe Package is designed for travelers who enjoy a balance of comfort, convenience, and adventure. It features 3–4 star accommodations, enhanced amenities, and well-planned itineraries to make your trip relaxing yet engaging.</p>  
+        <button class="view-more-btn">View More</button>
+        <div class="deal-dropdown">
+        <h4>With this package, you can:</h4>
+        <ul>
+        <li>Stay in premium accommodations close to top attractions</li>
+        <li>Enjoy daily breakfast and selected meals</li>
+        <li>Focus on exploring and experiencing, not luxury</li>
+        <li>Experience curated activities and excursions</li>
+        <li>Travel with convenience and comfort, without compromising       exploration</li>
+        </ul>    
+    </div>
+</div>
+    <div class="ultimate">
+        <h3>🏖️ Ultimate Package</h3>
+        <p class="pack_sub">Luxury and Fully Curated Experiences</p>
+        <p>The Ultimate Package is tailored for travelers seeking a premium, all-inclusive experience. It includes 4-star and above accommodations, private transfers, and meticulously planned itineraries to ensure maximum comfort, convenience, and enjoyment.</p>
+        <button class="view-more-btn">View More</button>
+        <div class="deal-dropdown">
+        <h4>With this package, you can:</h4>
+        <ul>
+        <li>Experience luxury accommodations and exclusive services</li>
+        <li>Enjoy personalized itineraries and private excursions</li>
+        <li>Benefit from premium inclusions, from meals to guided tours</li>
+        <li>Travel with peace of mind, knowing every detail is taken care of</li>
+        </ul>
+    </div>
+</div>
+</div>
+</section>
+
+<!--- ==============================================
+            Destination Section
+================================================ -->
+<section id="destinations">
+<h2><span class="highlight">Discover Exceptional Destinations</span></h2>
+    <p>
+  Discover <span class="highlight">handpicked destinations</span> designed to offer 
+  <span class="highlight">memorable experiences</span>, <span class="highlight">cultural richness</span>, and 
+  <span class="highlight">exceptional value</span>. From <em>vibrant cities</em> to 
+  <em>relaxing beach escapes</em>, each destination is carefully selected to ensure 
+  <span class="highlight">comfort</span>, <span class="highlight">convenience</span>, and 
+  <span class="highlight">authentic travel experiences</span> you can trust.
+</p>               
+     <h3>Popular Destinations</h3>
+ <section class="destination_card"> 
+      <!--- ============= Paris =============-->
+<div class="dcard">
+  <img src="travel-img/paris2.jpg" alt="Eiffel Tower view from Paris street" >
+  <h3>Paris | France</h3>
+  <p>
+   Explore one of the world's most iconic cities, known for its culture,
+    landmarks, and timeless appeal. Discover curated Paris travel packages
+    designed for comfort, value, and peace of mind.
+  </p>
+  <a href="/pages/paris.html" class="btn-primary">View more about destination</a>
+</div>
+      <!--- ============= Tokyo =============-->
+<div class="dcard">
+<img src="travel-img/IMG_0649.JPG" alt="Traditional Japanese temple architecture">
+  <h3>Tokyo | Japan</h3>
+  <p>
+    Experience a unique blend of ancient tradition and modern innovation.
+    From historic temples to cutting-edge districts, Tokyo offers rich culture,
+    world-class cuisine, and efficient transport.
+  </p>
+  <a href="/pages/tokyo.html" class="btn-primary">View more about destination</a>
+</div>
+    <!--- ============= New York =============-->
+<div class="dcard">
+    <img src="travel-img/IMG_0660.JPG" alt="Modern city skyline with high-rise buildings">
+  <h3>New York, USA</h3>
+  <p>
+    Discover a city defined by iconic landmarks, diverse neighborhoods, and
+    unmatched cultural energy. New York offers entertainment, dining, and
+    experiences for every type of traveler.
+  </p>
+  <a href="/pages/new_york.html" class="btn-primary">View more about destination</a>
+</div>
+    <!--- ============= Sydney =============-->
+<div class="dcard">
+    <img src="travel-img/sydney.jpg" alt="Sydney Opera House at sunset">
+  <h3>Sydney, Australia</h3>
+  <p>
+    Enjoy stunning coastal scenery, a relaxed lifestyle, and vibrant city
+    experiences. Sydney combines natural beauty with world-class attractions
+    and outdoor adventure.
+  </p>
+  <a href="/pages/sydney.html" class="btn-primary">View more about destination</a>
+</div>
+    <!--- ============= Cape Town =============-->
+<div class="dcard">
+  <img src="travel-img/IMG_0681.JPG" alt="Stadium aerial view in a city">
+  <h3>Cape Town | South Africa</h3>
+  <p>
+    A scenic coastal city known for Table Mountain, beaches, and cultural
+    diversity. Perfect for nature lovers, food enthusiasts, and adventure seekers.
+  </p>
+  <a href="/pages/cape_town.html" class="btn-primary">View more about destination</a>
+</div>
+    <!--- ============= Barcelona =============-->
+<div class="dcard">
+  <img src="travel-img/IMG_0659.JPG" alt="Gothic cathedral exterior with detailed architecture">
+  <h3>Barcelona | Spain</h3>
+  <p>
+    A colorful Mediterranean city famous for architecture, beaches, and vibrant
+    street life. Ideal for culture, food, and seaside relaxation.
+  </p>
+  <a href="/pages/barcelona.html" class="btn-primary">View more about destination</a>
+</div>
+</section>
+<section id="cities">
+    <div class="top_intro">
+        <h2><span class="highlight">Top cities to visit:</span></h2>
+       <p>
+  These are the <span class="highlight">top cities</span> that attract <span class="highlight">millions of people</span> for their 
+  <span class="highlight">rich history</span>, <span class="highlight">iconic landmarks</span>, <span class="highlight">diverse culture</span>, 
+  <span class="highlight">world-class cuisine</span>, and <span class="highlight">unforgettable experiences</span>, 
+  making them some of the most <span class="highlight">sought-after destinations</span> worldwide.
+</p>       
+<h3>Cities</h3>
+    </div>
+<div class="cities">
+  <!--- ============= BALI =============-->
+    <div class="citie_card">
+        <img src="travel-img/bali1.jpg" alt="Coastal landscape in Bali with cliffs and ocean">
+        <h3>Bali</h3>
+        <p>Top Indonesian island for beaches, nightlife, rice fields, and temples — best visited in the dry season from April to October (peak May–September).</p>
+        <a href="/pages/bali.html" class="btn-cities">View More</a> 
+        <a href="#contactForm" class="btn-primary">Book Now</a>
+      </div>    
+  <!--- ============= LISBON =============-->
+<div class="citie_card">
+    <img src="travel-img/IMG_0695.JPG" alt="Coastal town with ocean and buildings">
+    <h3>Lisbon</h3>
+    <p>Portugal’s coastal capital known for its historic neighborhoods, colorful streets, iconic tram rides, and delicious cuisine — best visited in spring or autumn for mild weather and fewer crowds.</p>
+    <a href="/pages/lisbon.html" class="btn-cities">View More</a> 
+    <a href="#contactForm" class="btn-primary">Book Now</a>
+</div>
+<!--- ============= Bosnia =============-->
+    <div class="citie_card">
+       <img src="travel-img/IMG_0701.JPG" alt="This is an image of bosnia.">
+        <h3>Bosnia - Herzegovina</h3>
+      <p>
+  Stunning landscapes, rich history, and vibrant culture — best visited in summer or shoulder seasons; stay on marked paths in rural areas.
+  </p>
+        <a href="/pages/bosnia.html" class="btn-cities">View More</a> 
+        <a href="#contactForm" class="btn-primary">Book Now</a>
+    </div>
+    <!--- ============= AMSTERDAM =============-->
+    <div class="citie_card">
+        <img src="travel-img/amsterdam.jpg" alt="Canal view with buildings in Amsterdam">
+        <h3>Amsterdam</h3>
+        <p>Canal city with world-class museums and bike-friendly streets — best visited April to October with easy public transport.</p>
+        <a href="/pages/amsterdam.html" class="btn-cities">View More</a> 
+        <a href="#contactForm" class="btn-primary">Book Now</a>
+    </div>
+    <!--- ============= MANALI =============-->
+<div class="citie_card">
+    <img src="travel-img/IMG_0708.JPG" alt="Snowy mountains landscape">
+    <h3>Manali | India</h3>
+    <p>Manali is a beautiful hill station nestled in the Himalayas, known for its snow-capped mountains, lush valleys, and adventure activities. Ideal for trekking, skiing, river rafting, and exploring the local culture and temples.</p>
+    <a href="/pages/manali.html" class="btn-cities">View More</a> 
+    <a href="#contactForm" class="btn-primary">Book Now</a>
+  </div>
+    <!--- ============= Dubai =============-->
+    <div class="citie_card">
+      <img src="travel-img/IMG_0713.JPG" alt="Burj Al Arab hotel in Dubai by the sea">
+  <h3>Dubai</h3>
+  <p>Modern luxury city with desert adventures, world-class shopping, and iconic skyscrapers — best visited November to March.</p>
+  <a href="/pages/dubai.html" class="btn-cities">View More</a> 
+  <a href="#contactForm" class="btn-primary">Book Now</a>
+</div>
+</div>
+</section>
+</section>
+
+<!--- ==============================================
+                    About Us
+================================================ -->
+  <section id="about">
+    <h2><span class="highlight">Flexible Travel Options</span></h2>
+    <p>
+  Whether you are looking for a <span class="highlight">short escape</span>, a 
+  <span class="highlight">relaxed resort stay</span>, or a <span class="highlight">premium travel experience</span>, 
+  our packages provide <span class="highlight">clear inclusions</span>, 
+  <span class="highlight">trusted services</span>, and 
+  <span class="highlight">flexible options</span> to help you 
+  <span class="highlight">travel with confidence</span>.
+</p>
+  <div class="about-intro">
+    <h3><span class="highlight">Why Choose TravelExplorer</span></h3>
+   <p>
+  <span class="highlight">TravelExplorer</span> delivers <span class="highlight">expertly curated</span> travel experiences designed for 
+  <span class="highlight">comfort</span>, <span class="highlight">clarity</span>, and 
+  <span class="highlight">complete peace of mind</span>. 
+  Every <span class="highlight">destination</span> is carefully selected. 
+  Every <span class="highlight">package</span> is strategically crafted. 
+  Every <span class="highlight">journey</span> is backed by 
+  <span class="highlight">reliability</span>, 
+  <span class="highlight">transparency</span>, and 
+  <span class="highlight">dedicated support</span>.
+</p>
+  </div>
+  <div class="card_grid">
+    <div class="main_card">
+      <i id="earth" class="fa-solid fa-earth-africa icon"></i>
+      <h4>Strategic Destination Selection</h4>
+      <p>
+        We choose destinations that deliver real value — culture, experience, and quality.
+      </p>
+    </div>
+    <div class="main_card">
+      <i id="circle" class="fa-solid fa-circle-check icon"></i>
+      <h4>Clear & Transparent Pricing</h4>
+      <p>
+        No hidden costs. No uncertainty. Just straightforward, secure booking.
+      </p>
+    </div>
+    <div class="main_card">
+      <i id="slider" class="fa-solid fa-sliders icon"></i>
+      <h4>Designed Around You</h4>
+      <p>
+        Flexible travel solutions tailored to different budgets, styles, and schedules.
+      </p>
+    </div>
+    <div class="main_card">
+      <i id="shield" class="fa-solid fa-shield-halved icon"></i>
+      <h4>Reliable. Secure. Proven.</h4>
+      <p>
+        Backed by trusted global partners and continuous support from start to finish.
+      </p>
+    </div>
+  </div>
+</section>
+    
+
+<!--- =================================================
+            Contact Info and Form
+========================================================-->
+<section id="contactForm">
+  <div class="c_heading">
+    <h2>We’d love to hear from you</h2>
+  </div>
+  <form class="contact-form" action="#" method="post" novalidate>
+    <h3>Please fill in the required information below or book your trip today.</h3>
+    <!-- Personal Information -->
+    <h4>Personal Information</h4>
+    <fieldset class="p_i">
+      <div class="form-group">
+        <input id="fullname" type="text" name="name" placeholder=" " autocomplete="name" required>
+        <label for="fullname">Full Name</label>
+      </div>
+      <div class="form-group">
+        <input id="surname" type="text" name="surname" placeholder=" " autocomplete="family-name" required>
+        <label for="surname">Surname</label>
+      </div>
+      <div class="form-group">
+        <input id="email" type="email" name="email" placeholder=" " autocomplete="email" required>
+        <label for="email">Email Address</label>
+      </div>
+      <div class="form-group">
+        <input id="mobile" type="tel" name="mobile" placeholder=" " pattern="[0-9\s+]{9,15}" autocomplete="tel" required>
+        <label for="mobile">Mobile Number</label>
+      </div>
+    </fieldset>
+    <!-- Travel Information Form -->
+    <h4>Travel Information</h4>
+    <fieldset class="t_i">
+      <div class="form-group">
+        <input id="adults" type="number" name="adults" min="1" required>
+        <label for="adults">Number of Adults</label>
+      </div>
+      <div class="form-group">
+        <input id="start_date" type="date" name="starting_date" required>
+        <label for="start_date">Starting Date</label>
+      </div>
+      <div class="form-group">
+        <input id="end_date" type="date" name="end_date" required>
+        <label for="end_date">End Date</label>
+      </div>
+      <div class="form-group">
+        <select id="children" name="children" required>
+          <option value="" disabled selected>Select number of children</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2+</option>
+          <option value="4">4+</option>
+        </select>
+        <label for="children">Number of Children</label>
+      </div>
+      <div class="form-group">
+        <input id="child_age" type="text" name="child_age" >
+        <label for="child_age">Children Ages (if any)</label>
+      </div>
+      <div class="form-group">
+        <input id="departing" type="text" name="departing"  required>
+        <label for="departing">Departing From</label>
+      </div>
+      <h5>Which package style fits you?</h5>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="p_style[]" value="essential"> Essential</label>
+        <label><input type="checkbox" name="p_style[]" value="deluxe"> Deluxe</label>
+        <label><input type="checkbox" name="p_style[]" value="ultimate"> Ultimate</label>
+        <label><input type="checkbox" name="p_style[]" value="other"> Other</label>
+      </div>
+      <div class="form-group">
+        <select id="destination" name="destination" required>
+          <option value="" disabled selected>Select a destination</option>
+          <option value="paris">Paris</option>
+          <option value="tokyo">Tokyo</option>
+          <option value="ny">New York</option>
+          <option value="sydney">Sydney</option>
+          <option value="bali">Bali</option>
+          <option value="cape_town">Cape Town</option>
+          <option value="china">China</option>
+          <option value="rome">Rome</option>
+          <option value="amsterdam">Amsterdam</option>
+        </select>
+        <label for="destination">Preferred Destination</label>
+      </div>
+      <h5>Special deal preference</h5>
+      <div class="radio-group">
+        <label><input type="radio" name="deal" value="25"> 25% Off</label>
+        <label><input type="radio" name="deal" value="15"> 15% Off</label>
+        <label><input type="radio" name="deal" value="35"> 35% Off</label>
+        <label><input type="radio" name="deal" value="10"> 10% Off</label>
+        <label><input type="radio" name="deal" value="none"> None</label>
+      </div>
+      <div class="form-group">
+        <label for="message">Additional Details About Your Travel Plans</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+    <h5>How should we contact you?</h5>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="response[]" value="phone"> Phone</label>
+      <label><input type="checkbox" name="response[]" value="message"> Message</label>
+      <label><input type="checkbox" name="response[]" value="email"> Email</label>
+    </div>
+  </fieldset>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+    <!--- ============= Star Rating =============-->
+<div class="star-rating" id="rating">
+  <span data-value="1">★ ★ ★ ★ ★ VOTED #1 IN TRAVEL.</span>
+  <p>TravelExplorer is a responsive travel website designed to help users discover destinations and explore travel options through a clean, intuitive, and engaging interface.</p>
+</div>
+<!--- =================================================
+                  Footer
+========================================================-->
+<footer class="footer">
+<section class="contact-section">
+  <h2>Contact Us</h2>
+  <p>We’re here to help you travel with confidence. Reach out through any of the channels below.</p>
+  <div class="contact-grid">
+    <a href="https://facebook.com/yourpage" target="_blank" class="contact-item" rel="noopener noreferrer">
+      <i id="facebook" class="fa-brands fa-facebook-f"></i>
+      <span>Facebook</span>
+    </a>
+    <a href="https://instagram.com/yourpage" target="_blank" class="contact-item" rel="noopener noreferrer">
+      <i id="instagram" class="fa-brands fa-instagram"></i>
+      <span>Instagram</span>
+    </a>
+    <a href="https://tiktok.com/@yourpage" target="_blank" class="contact-item" rel="noopener noreferrer">
+      <i id="tiktok" class="fa-brands fa-tiktok"></i>
+      <span>TikTok</span>
+    </a>
+    <a href="mailto:info@travelexplorer.com" class="contact-item">
+      <i id="mail" class="fa-solid fa-envelope"></i>
+      <span>Email Us</span>
+    </a>
+    <a href="tel:+27123456789" class="contact-item">
+      <i id="phone" class="fa-solid fa-phone"></i>
+      <span>Call Us</span>
+    </a>
+  </div>
+</section>
+<h3>Quick Links:</h3>
+<div class="footer-links">
+<a href="#deals">Home</a>
+<a href="#destinations">Destinations</a>
+<a href="#packages_index">Packages</a>
+<a href="#about">About Us</a>
+<a href="#contactForm">Contact</a>
+</div>
+<hr>
+<p class="demo">This project demonstrates core front-end development principles, including responsive layout design, UI consistency, and interactive functionality.</p>
+<p class="copyright">2026 TravelExplorer | Developed by Inette Badenhorst <br>
+© All rights reserved.</p>
+</footer>
+<script src="javascript.js" defer></script>
+</body>
+</html>
