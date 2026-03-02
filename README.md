@@ -1,210 +1,185 @@
-# 🌍 TravelExplorer – Travel Website
+# ✈️🌍 TravelExplorer – Travel Website
 
-![Preview](Screenshot-search.png)
+<p align="center">
+  <img src="Screenshot-search.png" width="900">
+</p>
 
-A modern, responsive travel website designed to help users explore destinations, discover curated travel packages, and plan trips with ease.
+<p align="center">
+  A modern, responsive travel website designed to explore destinations, discover curated packages, and plan trips with ease.
+</p>
 
-TravelExplorer focuses on **clean design, user experience, and interactive functionality**, making travel planning simple, engaging, and accessible.
-
----
-
-## 📌 Overview
-
-TravelExplorer is a front-end web project built using **HTML, CSS, and JavaScript**. It showcases:
-
-* Popular global travel destinations
-* Curated travel packages
-* Special deals and offers
-* Interactive booking/contact form
-* Authentication UI (Login & Sign Up modal)
-
-This project demonstrates strong **UI/UX design principles**, structured layout, and responsive web development.
+<p align="center">
+  <a href="https://Inette289.github.io/Updated-travel-website-project">
+    <strong>🌐 Live Demo</strong>
+  </a>
+</p>
 
 ---
 
-## 🚀 Features
+## 🌟 Overview
+
+TravelExplorer is a front-end web project built using **HTML, CSS, and JavaScript**.
+It focuses on **clean UI design, responsive layouts, and interactive functionality**, providing users with an engaging travel browsing experience.
+
+---
+
+## ✨ Features
 
 ### 🌐 Navigation & Layout
 
-* Responsive navigation bar with mobile menu toggle
-* Clean and structured multi-section layout
+* Responsive navigation with mobile menu
+* Structured multi-section layout
 * Smooth user experience across devices
 
 ### 🧭 Hero Section
 
-* Engaging headline and call-to-action
-* Travel search inputs (destination + dates)
+* Eye-catching headline and call-to-action
+* Travel search inputs (destination & dates)
 
 ### 💸 Deals Section
 
-* Multiple travel deals with discounts
-* Interactive “View More” dropdown functionality
-* Structured itineraries and pricing
+* Discounted travel deals
+* “View More” interactive dropdown
+* Structured itinerary display
 
 ### 📦 Travel Packages
 
-* Essential, Deluxe, and Ultimate packages
+* Essential, Deluxe, and Ultimate options
 * Expandable details for each package
-* Clear and persuasive content design
 
 ### 🏝️ Destinations
 
-* Popular global destinations (Paris, Tokyo, New York, etc.)
-* Destination cards with images and descriptions
-* Internal linking to detailed pages
+* Popular cities like Paris, Tokyo, New York
+* Image cards with descriptions
+* Linked destination pages
 
 ### 🌆 Cities Section
 
-* Highlighted top travel cities
+* Highlighted travel cities
 * “View More” and “Book Now” actions
 
 ### 👤 Authentication Modal
 
-* Login and Sign-Up forms
-* Clean modal UI design
-* Form validation structure
+* Login & Sign-Up UI
+* Clean modal design
 
 ### 📩 Contact Form
 
-* Detailed travel booking form
-* Personal + travel information fields
-* Checkboxes, radio buttons, and dropdowns
+* Full booking form
+* Inputs, dropdowns, checkboxes, radio buttons
 
 ### ⭐ Additional Features
 
 * Social media integration
-* Star rating section
-* SEO optimization (meta tags + Open Graph)
-* Accessible form labels and structure
+* Star ratings
+* SEO optimization (meta + Open Graph)
+* Accessible form structure
+
+---
+
+## 📷 Screenshots
+
+### 🏠 Homepage
+
+<p align="center">
+  <img src="Screenshot-search.png" width="800">
+</p>
+
+### 🌍 Destinations
+
+<p align="center">
+  <img src="Screenshot-destinations.png" width="800">
+</p>
+
+### 📦 Packages
+
+<p align="center">
+  <img src="Screenshot-pack.png" width="800">
+</p>
+
+### 🌆 Cities
+
+<p align="center">
+  <img src="Screenshot-cities.png" width="800">
+</p>
+
+### 📩 Contact Form
+
+<p align="center">
+  <img src="Screenshot-contact.png" width="800">
+</p>
+
+### 🔐 Authentication
+
+<p align="center">
+  <img src="Screenshot-sign.png" width="800">
+</p>
 
 ---
 
 ## 🛠️ Technologies Used
 
-* **HTML5** – Structure and semantic layout
-* **CSS3** – Styling, layout, responsiveness
-* **JavaScript** – Interactivity and dynamic elements
-* **Font Awesome** – Icons
-* **Git & GitHub** – Version control and hosting
+* HTML5
+* CSS3 (Flexbox & Grid)
+* JavaScript (Vanilla JS)
+* Font Awesome
+* Git & GitHub
 
 ---
 
 ## 📂 Project Structure
 
-Travel Website/
-│── index.html
-
-│── styles.css
-
-│── javascript.js
-
-│── README
-
-│── travel-img/
-
-│    ├── images (destinations, icons, etc.)
-
+Updated-travel-website-project/
+│
+├── index.html
+├── styles.css
+├── javascript.js
+├── README.md
+├── travel-img/
 ├── pages/
-
 │   ├── amsterdam.html
-
 │   ├── bali.html
-
 │   ├── barcelona.html
-
-│   ├── bosnia.html
-
-│   ├── cape-town.html
-
-│   ├── dubai.html
-
-│   ├── lisbon.html
-
-│   ├── manali.html
-
-│   ├── new-york.html
-
-│   ├── paris.html
-
-│   ├── sydney.html
-
+│   ├── ...
 │   └── tokyo.html
 
-│   ├── style.css
 
 
-
-## 📷 Screenshots
-
-
-![Preview](Screenshot-destinations.png)
-
-![Preview](Screenshot-pack.png)
-
-![Preview](Screenshot-cities.png)
-
-![Preview](Screenshot-city.png)
-
-![Preview](Screenshot-sign.png)
-![Preview](Screenshot-form.png)
-
-![Preview](Screenshot-contact.png)
-
-
----
-
-## 🌍 Live Demo
-
-👉 Add your GitHub Pages link here:
-
-https://Inette289.github.io/Updated-travel-website-project
-
----
 
 ## ⚙️ How to Run Locally
 
-1. Clone the repository:
-
+bash
 git clone https://github.com/Inette289/updated-travel-website-project.git
+cd updated-travel-website-project
 
 
-2. Open the folder:
-
-
-cd travelexplorer
-
-
-3. Open 'index.html' in your browser
+Open index.html in your browser.
 
 ---
 
-## 🎯 Learning Objectives
-
-This project demonstrates:
+## 🎯 Learning Outcomes
 
 * Responsive web design
-* Layout structuring with CSS
 * UI/UX best practices
-* JavaScript interactivity (modals, dropdowns)
-* Form handling and validation
+* JavaScript interactivity
+* Form handling & validation
 * SEO fundamentals
 
 ---
 
-## 💡 Future Improvements
+## 🚀 Future Improvements
 
-* Add backend functionality for form submission
-* Integrate real travel APIs
-* Improve accessibility (ARIA roles, keyboard navigation)
-* Add animations and transitions
-* Implement user authentication system
+* Backend integration
+* Real travel APIs
+* Improved accessibility
+* Animations & transitions
+* User authentication system
 
 ---
 
 ## 👩‍💻 Author
 
 **Inette Badenhorst**
-Developer
 
 ---
 
@@ -216,4 +191,4 @@ This project is for educational and portfolio purposes.
 
 ## ⭐ Final Note
 
-TravelExplorer is more than just a website — it is a **complete front-end portfolio project** that demonstrates real-world design, structure, and functionality expected in modern web development.
+TravelExplorer is a complete front-end project demonstrating real-world design, structure, and functionality expected in modern web development.
