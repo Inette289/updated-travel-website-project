@@ -91,7 +91,6 @@ This project demonstrates strong **UI/UX design principles**, structured layout,
 
 ## 📂 Project Structure
 
-```
 Travel Website/
 │── index.html
 │── styles.css
@@ -117,7 +116,9 @@ Travel Website/
 ---
 
 ## 📷 Screenshots
-  ![Preview](Screenshot-destinations.png)
+
+
+![Preview](Screenshot-destinations.png)
 ![Preview](Screenshot-pack.png)
 ![Preview](Screenshot-cities.png)
 ![Preview](Screenshot-city.png)
@@ -131,9 +132,7 @@ Travel Website/
 
 👉 Add your GitHub Pages link here:
 
-```
 https://Inette289.github.io/Updated-travel-website-project
-```
 
 ---
 
@@ -141,17 +140,16 @@ https://Inette289.github.io/Updated-travel-website-project
 
 1. Clone the repository:
 
-```
 git clone https://github.com/Inette289/updated-travel-website-project.git
-```
+
 
 2. Open the folder:
 
-```
-cd travelexplorer
-```
 
-3. Open `index.html` in your browser
+cd travelexplorer
+
+
+3. Open 'index.html' in your browser
 
 ---
 
