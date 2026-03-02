@@ -93,38 +93,63 @@ This project demonstrates strong **UI/UX design principles**, structured layout,
 
 Travel Website/
 │── index.html
-│── styles.css
-│── javascript.js
-│── README
-│── travel-img/
-│    ├── images (destinations, icons, etc.)
-├── pages/
-│   ├── amsterdam.html
-│   ├── bali.html
-│   ├── barcelona.html
-│   ├── bosnia.html
-│   ├── cape-town.html
-│   ├── dubai.html
-│   ├── lisbon.html
-│   ├── manali.html
-│   ├── new-york.html
-│   ├── paris.html
-│   ├── sydney.html
-│   └── tokyo.html
-│   ├── style.css```
 
----
+│── styles.css
+
+│── javascript.js
+
+│── README
+
+│── travel-img/
+
+│    ├── images (destinations, icons, etc.)
+
+├── pages/
+
+│   ├── amsterdam.html
+
+│   ├── bali.html
+
+│   ├── barcelona.html
+
+│   ├── bosnia.html
+
+│   ├── cape-town.html
+
+│   ├── dubai.html
+
+│   ├── lisbon.html
+
+│   ├── manali.html
+
+│   ├── new-york.html
+
+│   ├── paris.html
+
+│   ├── sydney.html
+
+│   └── tokyo.html
+
+│   ├── style.css
+
+
 
 ## 📷 Screenshots
 
 
 ![Preview](Screenshot-destinations.png)
+
 ![Preview](Screenshot-pack.png)
+
 ![Preview](Screenshot-cities.png)
+
 ![Preview](Screenshot-city.png)
+
 ![Preview](Screenshot-sign.png)
 ![Preview](Screenshot-form.png)
+
 ![Preview](Screenshot-contact.png)
+
 
 ---
 
