@@ -1,5 +1,7 @@
 # 🌍 TravelExplorer – Travel Website
 
+![Preview](Screenshot-search.png)
+
 A modern, responsive travel website designed to help users explore destinations, discover curated travel packages, and plan trips with ease.
 
 TravelExplorer focuses on **clean design, user experience, and interactive functionality**, making travel planning simple, engaging, and accessible.
@@ -115,11 +117,13 @@ Travel Website/
 ---
 
 ## 📷 Screenshots
-            
-                     
-                             
-                           
- 
+  ![Preview](Screenshot-destinations.png)
+![Preview](Screenshot-pack.png)
+![Preview](Screenshot-cities.png)
+![Preview](Screenshot-city.png)
+![Preview](Screenshot-sign.png)
+![Preview](Screenshot-form.png)
+![Preview](Screenshot-contact.png)
 
 ---
 
